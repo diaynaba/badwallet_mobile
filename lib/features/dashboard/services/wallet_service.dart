@@ -24,8 +24,9 @@ class WalletService {
 
     }
 
-    throw Exception("Erreur récupération solde");
-
+    throw Exception(
+  "Code : ${response.statusCode}\n${response.body}",
+    );
   }
 
   Future<List<WalletTransaction>> getTransactions(
@@ -49,7 +50,9 @@ class WalletService {
 
     }
 
-    throw Exception("Erreur historique");
+    throw Exception(
+  "Code : ${response.statusCode}\n${response.body}",
+    );
 
   }
 
