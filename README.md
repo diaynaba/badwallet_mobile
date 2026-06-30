@@ -1,17 +1,50 @@
-# badwallet_mobile
+# BadWallet Mobile
 
-A new Flutter project.
+Application mobile Flutter réalisée dans le cadre de l'examen Flutter L3 S2 2026.
 
-## Getting Started
+## Technologies
 
-This project is a starting point for a Flutter application.
+- Flutter
+- Dart
+- Provider
+- HTTP
+- Spring Boot REST API
 
-A few resources to get you started if this is your first Flutter project:
+## Fonctionnalités
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Splash Screen
+- Authentification par numéro de téléphone
+- Consultation du solde
+- Consultation de l'historique
+- Transfert d'argent
+- Paiement de factures (prévu)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## API
+
+Backend Spring Boot
+
+```
+http://localhost:8080
+```
+
+Emulateur Android
+
+```
+http://10.0.2.2:8080
+```
+
+## Build
+
+```
+flutter pub get
+
+flutter run
+
+flutter build apk --release
+```
+
+APK généré :
+
+```
+build/app/outputs/flutter-apk/app-release.apk
+```
